@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>NBA-INE-SHOP</title>
+</head>
+<body style="background-image: url('/img/NBA.jpg');">
+    <div class="banner-area">
+        <header>
+            <a href="home.html" class="logo">NBA-INE-SHOP</a>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="e-commerce.html">Shop</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+        </header>
+        <div class="banner-text">
+            <h2>ยินดีต้อนรับเข้าสู้ร้านค้าของเรา</h2>
+            <p>สินค้า คุณภาพดีจาก NBA-INE-SHOP</p>
+            <a href="e-commerce.html">เข้าสู่ร้านค้า</a>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItem");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    <script src="./js/shopping.js"></script>
+
+</body>
+</html>

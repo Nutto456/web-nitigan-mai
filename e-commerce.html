@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modifly.css">
+    <title>NBA-INE-SHOP</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                        <a href="home.html"><img src="img/airjordan.jpg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="e-commerce.html">Shop</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="cart_area" href="cart.html">
+                    <img src="img/cart.png" width="30px" height="30px">
+                    <div class="count_items_cart_area hidden">
+                        <p class="unit_items_cart">0</p>
+                    </div>
+                </a>
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>สินค้า<br>ชาวจอร์แดนทุกท่าน !!</h1>
+                    <p>รองเท้า Air Jordan ใหม่ ให้คุณมั่นใจในการแข่งขัน กับการรองรับแรงกระแทกและความมั่นคงที่ดี 
+                        เลือกซื้อรองเท้า Air Jordan ใหม่ ที่ทำให้คุณมั่นใจในการแข่งขันและยกระดับเกมของคุณ</p>
+                </div>
+                <div class="col-2">
+                    <img src="img/jordan.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+<!------สินค้า------->
+    <div class="small-container">
+        <h2 class="title">NIKE Air Sneakers</h2>
+        <div class="row">
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/9.webp">
+                <h4 class="name_item">Air Zion 2 PF</h4>
+                <p class="pp price_item">฿ 5,100.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/8.webp">
+                <h4 class="name_item">Air Jordan 12 Eastside Golf</h4>
+                <p class="pp price_item">฿ 7,200.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/7.webp">
+                <h4 class="name_item">Air Jordan Max Aura 4</h4>
+                <p class="pp price_item">฿ 4,800.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/1.webp">
+                <h4 class="name_item">Air Jordan XXXVII PF</h4>
+                <p class="pp price_item">฿ 6,600.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/2.webp">
+                <h4 class="name_item">Air Jordan 1 Zoom CMFT</h4>
+                <p class="pp price_item">฿ 5,200.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/3.webp">
+                <h4 class="name_item">Air Jordan 1 Retro High OG</h4>
+                <p class="pp price_item">฿ 6,100.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/4.webp">
+                <h4 class="name_item">Air Jordan 7 Retro</h4>
+                <p class="pp price_item">฿ 7,200.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/5.webp">
+                <h4 class="name_item">Air Jordan 1 Mid SE</h4>
+                <p class="pp price_item">฿ 5,100.0</p>
+            </div>
+        </div>
+        <h2 class="title">NIKE Shirts</h2>
+        <div class="row">
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/10.webp">
+                <h4 class="name_item">NikeLab</h4>
+                <p class="pp price_item">฿ 2,600.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/11.webp">
+                <h4 class="name_item">Jordan Essential Holiday</h4>
+                <p class="pp price_item">฿ 2,400.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/12.webp">
+                <h4 class="name_item">Nike Sportswear Air</h4>
+                <p class="pp price_item">฿ 3,000.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/13.webp">
+                <h4 class="name_item">Nike Sportswear</h4>
+                <p class="pp price_item">฿ 2,900.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/14.webp">
+                <h4 class="name_item">Nike Standard Issue</h4>
+                <p class="pp price_item">฿ 2,600.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/15.webp">
+                <h4 class="name_item">Tiger Woods</h4>
+                <p class="pp price_item">฿ 3,400.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/16.webp">
+                <h4 class="name_item">Nike Forward Crew</h4>
+                <p class="pp price_item">฿ 3,900.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/17.webp">
+                <h4 class="name_item">Nike Sportswear</h4>
+                <p class="pp price_item">฿ 2,900.0</p>
+            </div>
+        </div>
+        <h2 class="title">NIKE Pants</h2>
+        <div class="row">
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/18.webp">
+                <h4 class="name_item">Nike Sportswear Tech Fleece</h4>
+                <p class="pp price_item">฿ 3,400.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/19.webp">
+                <h4 class="name_item">Nike Sportswear Air</h4>
+                <p class="pp price_item">฿ 2,400.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/20.webp">
+                <h4 class="name_item">Nike ACG Polartec® “Wolf Tree”</h4>
+                <p class="pp price_item">฿ 4,400.0</p>
+            </div>
+
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/21.webp">
+                <h4 class="name_item"> Jordan Dri-FIT Sport Air</h4>
+                <p class="pp price_item">฿ 3,000.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/22.webp">
+                <h4>Nike Dri-FIT</h4>
+                <p class="pp price_item">฿ 1,800.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/23.webp">
+                <h4 class="name_item">Nike Sportswear</h4>
+                <p class="pp price_item">฿ 3,500.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/24.webp">
+                <h4 class="name_item">Jordan Artist Series by Jacob Rochester</h4>
+                <p class="pp price_item">฿ 2,900.0</p>
+            </div>
+            <div class="col-4 cursor_pointer" onclick="addToCart(this)">
+                <img class="img_item" src="img/25.webp">
+                <h4 class="name_item">Paris Saint-Germain</h4>
+                <p class="pp price_item">฿ 2,900.0</p>
+            </div>
+        </div>
+    </div>
+<!------footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>ติดตั้งบนแอป Android และ IOS</p>
+                    <div class="app-logo">
+                        <a href="https://www.android.com/"><img src="img/play-store.png"></a>
+                        <a href="https://www.apple.com/ios/ios-15/"><img src="img/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>" สินค้าทุกชิ้นถึงมือลูกค้าไว้วางใจเรา "</h3>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul class="link">
+                        <li><a href="https://kmutnb.ac.th/">KMUTNB</a></li>
+                        <li><a href="https://www.facebook.com/FITM.KMUTNB/">FITM</a></li>
+                        <li><a href="https://www.facebook.com/INEKMUTNB/">INE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Joddna">Facbook</a></li>
+                        <li><a href="https://www.instagram.com/jod_jakapat/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCcD6g_TOz5Z-ugJgROGhbYw">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Jakapat</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItem");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    <script src="./js/shopping.js"></script>
+
+</body>
+</html>

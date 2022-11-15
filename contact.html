@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modifly.css">
+    <title>Jakapat G-SHOP</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                        <a href="home.html"><img src="img/Logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="e-commerce.html">Shop</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li> 
+                    </ul>
+                </nav>
+                <a class="cart_area" href="cart.html">
+                    <img src="img/cart.png" width="30px" height="30px">
+                    <div class="count_items_cart_area hidden">
+                        <p class="unit_items_cart">0</p>
+                    </div>
+                </a>
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">           
+            </div>
+
+        </div>
+    </div>
+    
+<!------ติดต่อ------->
+    <div class="contact-in">
+        <div class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15474.423786086983!2d101.3456391!3d14.1592493!
+            3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83d165d1cca95d3b!2z4LiE4LiT4Liw4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14LmB4Lil4Liw4
+            LiB4Liy4Lij4LiI4Lix4LiU4LiB4Liy4Lij4Lit4Li44LiV4Liq4Liy4Lir4LiB4Lij4Lij4LihIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC5gOC4l-
+            C4hOC5guC4meC5guC4peC4ouC4teC4nuC4o-C4sOC4iOC4reC4oeC5gOC4geC4peC5ieC4suC4nuC4o-C4sOC4meC4hOC4o-C5gOC4q-C4meC4t-C4rQ!5e0!3m2!1sen!2s
+            th!4v1636857104092!5m2!1sen!2sth" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" placeholder="UserName" class="contact-form-txt">
+                <input type="email" placeholder="E-Mail" class="contact-form-txt">
+                <textarea placeholder="Message" class="contact-form-textarea"></textarea>
+                <input type="submit" placeholder="Submit" class="contact-form-btn"">
+            </form>
+        </div>
+    </div>
+<!------footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>ติดตั้งบนแอป Android และ IOS</p>
+                <div class="app-logo">
+                    <a href="https://www.android.com/"><img src="img/play-store.png"></a>
+                    <a href="https://www.apple.com/ios/ios-15/"><img src="img/app-store.png"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>" สินค้าทุกชิ้นถึงมือลูกค้าไว้วางใจเรา "</h3>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links</h3>
+                <ul class="link">
+                    <li><a href="https://kmutnb.ac.th/">KMUTNB</a></li>
+                    <li><a href="https://www.facebook.com/FITM.KMUTNB/">FITM</a></li>
+                    <li><a href="https://www.facebook.com/INEKMUTNB/">INE</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/Joddna">Facbook</a></li>
+                    <li><a href="https://www.instagram.com/jod_jakapat/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCcD6g_TOz5Z-ugJgROGhbYw">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Jakapat</p>
+    </div>
+</div>
+    <script>
+        var MenuItems = document.getElementById("MenuItem");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    <script src="./js/shopping.js"></script>
+
+</body>
+</html>
