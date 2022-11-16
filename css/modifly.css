@@ -362,7 +362,7 @@ form input{
 }
 .Yes{   
     display:inline-block;
-    background: #33ff00;
+    background: black;
     color:#fff;
     padding: 3px 30px;
     border-radius: 30px;
@@ -374,7 +374,7 @@ form input{
 }
 .No{
     display:inline-block;
-    background: #ff1e00;
+    background: black;
     color:#fff;
     padding: 3px 30px;
     border-radius: 30px;
@@ -481,7 +481,7 @@ form input{
     border: none;
     outline: none;
     border-radius: 50px;
-    background: green;
+    background: red;
     color: white;
     text-transform: uppercase;
     padding: 10px 0;

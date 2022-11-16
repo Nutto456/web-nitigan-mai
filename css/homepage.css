@@ -26,7 +26,7 @@
         float:left; 
     }
     .menu li:hover{
-        background: gray;
+        background: red;
     }
     .menu li:hover a{
         color: 0;
@@ -57,7 +57,7 @@
         font-family: 'Kanit', sans-serif;
         margin: 0;
         font-size: 55px;
-        color:whitesmoke;
+        color:red;
     }
     .banner-text p{
         font-size: 22px;
@@ -66,18 +66,18 @@
     }
     .banner-text a{
         text-decoration: none;
-        border: 1px solid white;
+        border: 1px solid #fff;
         font-size: 17px;
         padding: 10px 35px;
-        color: white;
+        color: #fff;
         display: inline-block;
         margin-top: 5%;
         font-family: 'Kanit', sans-serif;
         text-transform: uppercase;
     }
     .banner-text a:hover{
-        border-color: black;
-        background: white;
+        border-color: red;
+        background: red;
         transition: .9s;
         color: #262626;
     }
